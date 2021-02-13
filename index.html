@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/font.css">
+    <title>Blogin</title>
+    <!-- Website Design by Emran hasan  -->
+</head>
+<body>
+
+    <!-- header part -->
+    <div class="container_full header_bg">
+        <div class="fix container">
+            <header id="header">
+                <div class="logo-left">
+                    <h1>Blogin</h1>
+                </div>
+
+                <nav class="nav">
+                    <ul id="menu">
+                        <li class="active"><a href="#cont">Journal</a></li>
+                        <li><a href="#cont-2">About</a></li>
+                        <li><a href="#cont-3">Work</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
+
+    <!-- body part -->
+    <div class="container_full container_border">
+        <div class="fix container">
+            <div class="content-wrapper">
+                <section class="left-content">
+                    <article class="single_post_wrapper" id="cont">
+
+                        <img src="img/blog_template.png" alt="">
+
+                        <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipop ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                        Duis aute irure dolor inreprehenderit in voluptate velitesse cillum dolore eu fugiat nullapariatur...</p>
+
+                        <a class="continue_r" href="#">Continue Reading</a>
+
+                    </article>
+
+                    <article class="single_post_wrapper" id="cont-2">
+
+                        <img src="img/blog_template1.png" alt="">
+
+                        <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipop ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                        Duis aute irure dolor inreprehenderit in voluptate velitesse cillum dolore eu fugiat nullapariatur...</p>
+
+                        <a class="continue_r" href="#">Continue Reading</a>
+                        
+                    </article>
+                </section>
+
+                <div class="sidebar">
+
+                    <aside class="single_sidebar">
+                        <h2>About Blogin</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p><br>
+                        <p>Excepteur sint occaecat sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </aside><br>
+
+                    <aside class="single_sidebar">
+                        <h2>Search</h2>
+                        <input class="search_box" type="search" placeholder="What are you looking for?" name="" id="">
+                    </aside>
+
+                    <aside class="single_sidebar">
+                        <div class="email_submit">
+                        <h2>Stay Tuned</h2>
+                        <input class="" type="email" placeholder="Your Email" name="" id="">
+                        <input type="submit" name="" id="searchsubmit">
+                        </div>
+                    </aside>
+
+                </div>
+            </div>
+
+            <div class="content-bottom" id="cont-3">
+                <a class="previous" href="#">&#8592; Previous</a>
+                <a class="next" href="#">Next &#8594;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer part -->
+    <div class="container_full footer_bg">
+        <div class="fix container">
+            <footer id="footer">
+                <h1>Blogin</h1>
+               <p>&copy; 2021 Blogin -All Right Reserved - EmranBD</p>
+                <div class="social_area">
+                    <ul>
+                        <li class="facebook"><a href="#"></a></li>
+                        <li class="twitter"><a href="#"></a></li>
+                        <li class="be"><a href="#"></a></li>
+                        <li class="de"><a href="#"></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="plugin/jquery.smoothscroll.js"></script>
+    <script>
+        $(document).ready(function (){
+            $('html').smoothScroll();
+        })
+    </script> -->
+    <script src="plugin/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+        // var scroll = new SmoothScroll('a[href*="#cont"]');
+        // var scroll = new SmoothScroll('a[href*="#cont-2"]');
+        // var scroll = new SmoothScroll('a[href*="#cont-3"]');
+        // var scroll = new SmoothScroll('a[href*="#footer"]');
+    </script>
+</body>
+</html>
+
+

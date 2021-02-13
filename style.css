@@ -1,0 +1,340 @@
+/* basic typography */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif, arial !important;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    line-height: 150%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+.fix{
+    overflow: hidden;
+}
+
+.container_full{
+    width: 100%;
+}
+
+.container{
+    width: 980px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Header part */
+.header_bg{
+    background-color: #292929;
+}
+
+#header .logo-left{
+    float: left;
+} 
+
+#header .logo-left h1{
+    font-family: lato;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 30px;
+}
+
+#header .nav{
+    float: right;
+}
+
+#header .nav #menu{
+    list-style: none;
+}
+
+#header .nav #menu li{
+    float: left;
+    border-right: 1px solid #1E1E1E;
+}
+
+#header .nav #menu li:first-child{
+    border-left: 1px solid #1E1E1E;
+}
+
+#header .nav #menu li a{
+    display: block;
+    color:#fff;
+    font-family: lato;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 50px 30px;
+    border-bottom: 5px solid #1E1E1E;
+}
+
+#header .nav #menu li a:hover{
+    border-bottom: 5px solid #41C84E;
+    color: #41C84E;
+}
+
+#header .nav #menu li.active a{
+    border-bottom: 5px solid #41C84E;
+    color: #41C84E;
+}
+
+/* body part */
+
+.container_border{
+    border-top: 5px solid #1E1E1E;
+    margin-top: -4px;
+    border-bottom: 1px solid #E1E0E0;
+}
+
+.content-wrapper{
+    border-left: 1px solid #E1E0E0;
+    border-right: 1px solid #E1E0E0;
+    overflow: hidden;
+    padding-top: 75px;
+}
+
+.left-content{
+    float: left;
+    width: 620px;
+    margin-right: 70px;
+}
+
+.left-content .single_post_wrapper img{
+    width: 620px;
+    height: 308px;
+}
+
+.left-content .single_post_wrapper h2{
+    font-family: lato;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #4f4e4e;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.left-content .single_post_wrapper p{
+    font-family: lato;
+    font-size: 16px;
+    color: #606060;
+    padding-top: 30px;
+    padding-left: 15px;
+    margin-bottom: 35px;
+}
+
+.left-content .single_post_wrapper{
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.left-content .single_post_wrapper .continue_r{
+    font-family: lato;
+    font-size: 16px;
+    font-weight: bold;
+    color:#c2c1c1;
+    border: 1px solid #c2c2c2;
+    border-radius: 26px;
+    padding: 10px 35px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+/* sidebar part */
+.sidebar{
+    float: right;
+    width: 280px;
+}
+
+.sidebar .single_sidebar{
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.sidebar .single_sidebar h2{
+    font-family: lato;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-left: 3px solid #41C84E;
+    padding-left:20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #6c6969;
+    margin-bottom: 15px;
+    background-color: #F8F8F8;
+}
+
+.sidebar .single_sidebar p{
+    font-family: lato;
+    font-size: 16px;
+    color: #737373;
+    margin-left: 25px;
+    width: 90%;
+}
+
+.sidebar .single_sidebar .search_box{
+    float: right;
+    width: 280px;
+    height: 50px;
+    border: 1px solid #E1E0E0;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/* .sidebar .single_sidebar input::placeholder{
+    padding-left: 25px;
+} */
+
+.sidebar .single_sidebar input[type="search"], [ type="email"]{
+    padding-left: 25px;
+}
+
+.sidebar .single_sidebar .email_submit{
+    position: relative;
+}
+
+.sidebar .single_sidebar .email_submit input{
+    float: right;
+    width: 280px;
+    height: 50px;
+    border: 1px solid #E1E0E0;
+    margin-top: 10px;
+}
+
+.sidebar .single_sidebar .email_submit input[type = "submit"]{
+    float: right;
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background: url('img/Arrow.png') no-repeat;
+    text-indent:-99999px;
+    border: none;
+    left: 230px;
+    top: 65px;
+    cursor: pointer;
+}
+
+/* pre next part */
+
+.content-bottom{
+    border-top: 1px solid #E1E0E0;
+    border-left: 1px solid #E1E0E0;
+    border-right: 1px solid #E1E0E0;
+    padding: 25px;
+    overflow: hidden;
+}
+
+.content-bottom .previous{
+    font-family: lato;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #818181;
+    float: left;
+}
+
+.content-bottom .next{
+    font-family: lato;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #818181;
+    float: right;
+}
+
+/* footer part */
+
+#footer{
+    text-align: center;
+    margin: 60px 50px;
+}
+
+.footer_bg{
+    background: #F8F8F8;
+}
+
+#footer h1{
+    font-family: lato;
+    font-size: 40px;
+    font-weight: bold;
+    color: #292929;
+}
+
+#footer p{
+    font-size: 13px;
+    font-weight: bold;
+    color: #a6a6a6;
+}
+
+#footer .social_area{
+
+}
+
+#footer .social_area ul{
+    list-style: none;
+}
+
+#footer .social_area ul li{
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+#footer .social_area ul li.facebook a{
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: url('img/fb1.png') no-repeat;
+}
+
+#footer .social_area ul li.facebook:hover a{
+    background: url('img/fb.png') no-repeat;
+}
+
+#footer .social_area ul li.twitter a{
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: url('img/tw.png') no-repeat;
+}
+
+#footer .social_area ul li.twitter:hover a{
+    background: url('img/tw1.png') no-repeat;
+}
+
+#footer .social_area ul li.be a{
+    display: block;
+    height: 43px;
+    width: 43px;
+    background: url('img/e.png') no-repeat;
+}
+
+#footer .social_area ul li.be:hover a{
+    background: url('img/e1.png') no-repeat;
+}
+
+#footer .social_area ul li.de a{
+    display: block;
+    height: 43px;
+    width: 43px;
+    background: url('img/D.png') no-repeat;
+}
+
+#footer .social_area ul li.de:hover a{
+    background: url('img/D1.png') no-repeat;
+}
